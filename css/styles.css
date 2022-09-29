@@ -59,6 +59,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+a {
+  text-decoration: none;
+}
 
 .button {
   font-family: Roboto, sans-serif;
@@ -361,7 +364,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: var(--white-color);
   color: var(--primary-icon-color);
 
   border-radius: 50%;
@@ -429,6 +432,11 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-thumb {
+  display: flex;
+  gap: 70px;
+}
+
 .footer .logo {
   margin-bottom: 20px;
 }
@@ -472,6 +480,45 @@ body {
   color: var(--accent-color);
 }
 
+.join-thumb {
+  margin-top: 15px;
+}
+
+.footer-join-tittle {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background: var(--accent-color);
+}
+
 /* ------------------------------------------------------------------------- */
 /* ---------------------------------PORTFOLIO------------------------------- */
 /* ------------------------------------------------------------------------- */
@@ -500,6 +547,9 @@ body {
 .button-secondary:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -538,6 +588,17 @@ body {
 }
 
 .portfolio-text {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
