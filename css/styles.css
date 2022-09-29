@@ -435,6 +435,7 @@ a {
 .footer-thumb {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -481,7 +482,7 @@ a {
 }
 
 .join-thumb {
-  margin-top: 15px;
+  /*   margin-top: 15px; */
 }
 
 .footer-join-tittle {
